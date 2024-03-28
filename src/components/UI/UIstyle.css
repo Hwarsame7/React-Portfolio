@@ -1,0 +1,110 @@
+/* styling for specific elements on page */
+
+.header{
+    padding: 35px;
+    text-align: center;
+    background: #0B2545;
+    color: #E0A800;
+    filter: blur(1.5px);
+    font-size: 30px;
+}
+
+.nav-tabs {
+  background: #0B2545;
+}
+
+.nav-item {
+  color: inherit;
+}
+
+.content-box {
+  width: 70%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur-content {
+  backdrop-filter: blur(5px);
+}
+
+.portrait {
+  width: 30%;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 10px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #E0A800;
+    color: #EEF4ED;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 5;
+  position: fixed;
+  height: 120px;
+  width:100%;
+  background-color: #0B2545;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  /* display: flex; */
+
+  .footerText {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #EEF4ED;
+  }
+
+  .footer-icons {
+    height: 35px;
+    width: auto;
+    padding-left: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-boxes {
+    display: flex;
+    justify-content: center;
+  }
+}
